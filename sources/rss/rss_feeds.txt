@@ -1,0 +1,10 @@
+http://feeds.bbci.co.uk/news/world/rss.xml
+https://www1.cbn.com/rss-feeds
+https://www.dailytelegraph.com.au/help-rss
+https://thewest.com.au/rss-feeds
+http://feeds.bbci.co.uk/news/rss.xml
+http://www.cbn.com/cbnnews/us/feed/
+http://news.yahoo.com/rss/
+http://feeds.bbci.co.uk/news/technology/rss.xml
+http://feeds.bbci.co.uk/news/business/rss.xml
+https://www.techradar.com/uk/feeds.xml
