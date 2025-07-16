@@ -4,4 +4,6 @@ version = "0.1.0"
 description = "A simple python news aggregator project"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "requests>=2.32.4",
+]
