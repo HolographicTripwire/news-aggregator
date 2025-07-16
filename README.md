@@ -1,0 +1,1 @@
+A simple python news aggregator project
