@@ -25,14 +25,15 @@ class NewsArticle:
     # - A pretty, printable string including the information requested if it was available
     def to_string(self, source = True, author = True, title = True, summary = True, url = True, imageUrl = False, publishDate = True, content = False):
         # If any of the flags are set to true, attempt to get their corresponding values
-        source      = self.source      and source
-        author      = self.author      and author
-        title       = self.title       and title
-        summary     = self.summary     and summary
-        url         = self.url         and url
-        imageUrl    = self.imageUrl    and imageUrl
-        publishDate = self.publishDate and publishDate
-        content     = self.content     and content
+        val_or_none = lambda val, check: val if check else None
+        source      = val_or_none(self.source     , source)
+        author      = val_or_none(self.author     , author)
+        title       = val_or_none(self.title      , title)
+        summary     = val_or_none(self.summary    , summary)
+        url         = val_or_none(self.url        , url)
+        imageUrl    = val_or_none(self.imageUrl   , imageUrl)
+        publishDate = val_or_none(self.publishDate, publishDate)
+        content     = val_or_none(self.content    , content)
 
         # Create the initial string that will be added to
         result = ""
@@ -66,4 +67,4 @@ class NewsArticle:
             result += f"Content: {content}\n"
         
         # Return the completed string
-        return result
+        return result.strip()
